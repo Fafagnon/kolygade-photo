@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Réservation — Photo Kolygade | Studio Photo &amp; Vidéo à Lomé</title>
+    <meta name="description"
+        content="Réservez votre séance photo, votre reportage vidéo ou votre couverture d'événement avec Photo Kolygade à Lomé. Devis rapide, réponse sous 24h.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">Photo Kolygade</a>
+            <nav class="main-nav" id="main-nav">
+                <a href="prestations.html">Prestations</a>
+                <a href="galerie.html">Galerie</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- PAGE HERO BANNER -->
+        <section class="page-hero">
+            <div class="page-hero-inner">
+                <span class="page-hero-tag">Réservation &amp; Devis</span>
+                <h1 class="page-hero-title">Parlons de votre projet</h1>
+                <p class="page-hero-sub">Un mariage, un tournage, un événement d'entreprise&nbsp;? Dites-nous-en un peu
+                    plus et nous revenons vers vous sous 24h avec un devis clair.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT & FORMULAIRE DE RDV -->
+        <section class="contact">
+            <div class="contact-inner">
+                <div class="contact-grid">
+
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <h3>Coordonnées directes</h3>
+                            <p>Pour une réponse immédiate, appelez-nous ou écrivez sur WhatsApp&nbsp;: c'est souvent le
+                                plus rapide.</p>
+
+                            <div class="contact-methods">
+                                <a href="tel:+22891980485" class="contact-item">
+                                    <span class="contact-icon">📞</span>
+                                    <div>
+                                        <strong>Appel téléphonique</strong>
+                                        <span>+228 91 98 04 85</span>
+                                    </div>
+                                </a>
+                                <a href="https://wa.me/22891980485" class="contact-item" target="_blank" rel="noopener">
+                                    <span class="contact-icon">💬</span>
+                                    <div>
+                                        <strong>WhatsApp direct</strong>
+                                        <span>Écrire sur WhatsApp</span>
+                                    </div>
+                                </a>
+                                <a href="mailto:contact@photokolygade.tg" class="contact-item">
+                                    <span class="contact-icon">✉️</span>
+                                    <div>
+                                        <strong>Email</strong>
+                                        <span>contact@photokolygade.tg</span>
+                                    </div>
+                                </a>
+                                <div class="contact-item">
+                                    <span class="contact-icon">📍</span>
+                                    <div>
+                                        <strong>Localisation</strong>
+                                        <span>Lomé, Togo</span>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-icon">🕒</span>
+                                    <div>
+                                        <strong>Disponibilité</strong>
+                                        <span>Lun–Sam, 8h–19h</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contact-form">
+
+                            <p class="form-fieldset-title">Vos coordonnées</p>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nom complet</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Téléphone / WhatsApp</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <p class="form-fieldset-title">Votre projet</p>
+                            <div class="form-group">
+                                <label for="service">Type de prestation</label>
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Sélectionnez votre prestation...</option>
+                                    <option value="reportage">Reportage photo (Mariage, Cérémonie, Fête)</option>
+                                    <option value="video">Captation &amp; Montage vidéo</option>
+                                    <option value="couverture">Couverture médiatique &amp; Événementielle</option>
+                                    <option value="portrait">Shooting portrait &amp; Book photo</option>
+                                    <option value="autre">Autre projet sur-mesure</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Format souhaité</label>
+                                <div class="format-toggle">
+                                    <input type="radio" id="format-photo" name="format" value="photo" checked>
+                                    <label for="format-photo">Photo</label>
+
+                                    <input type="radio" id="format-video" name="format" value="video">
+                                    <label for="format-video">Vidéo</label>
+
+                                    <input type="radio" id="format-both" name="format" value="photo-video">
+                                    <label for="format-both">Photo &amp; Vidéo</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Lieu de l'événement</label>
+                                <input type="text" id="location" name="location">
+                            </div>
+
+                            <p class="form-fieldset-title">Votre rendez-vous souhaité</p>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Date souhaitée</label>
+                                    <input type="date" id="date" name="date">
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Heure souhaitée</label>
+                                    <input type="time" id="time" name="time">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Votre message</label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Nombre d'invités, durée estimée, ambiance recherchée, questions..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">Envoyer ma demande</button>
+                            <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo">Photo Kolygade</span>
+                <p>Prestations professionnelles de reportage photo, production vidéo et couverture médiatique à Lomé,
+                    Togo.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html#accueil">Accueil</a></li>
+                    <li><a href="prestations.html">Prestations</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact direct</h4>
+                <p>Lomé, Togo</p>
+                <p><a href="tel:+22891980485">+228 91 98 04 85</a></p>
+                <p><a href="mailto:contact@photokolygade.tg">contact@photokolygade.tg</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Photo Kolygade — Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

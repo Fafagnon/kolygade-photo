@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie — Photo Kolygade | Portfolio &amp; Reportages à Lomé</title>
+  <meta name="description"
+    content="Explorez la galerie de réalisations de Photo Kolygade : reportages de mariages, portraits studio, captations vidéo et événements à Lomé, Togo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Photo Kolygade</a>
+      <nav class="main-nav" id="main-nav">
+        <a href="prestations.html">Prestations</a>
+        <a href="galerie.html" class="active">Galerie</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <span class="page-hero-tag">Portfolio &amp; Réalisations</span>
+        <h1 class="page-hero-title">Notre Galerie</h1>
+        <p class="page-hero-sub">Une sélection d'instants capturés sur le vif&nbsp;: l'intensité d'un regard, l'émotion
+          d'une alliance passée au doigt, la joie d'une célébration ou l'envergure d'un événement officiel à Lomé.</p>
+      </div>
+    </section>
+
+    <!-- FILTRES DE LA GALERIE -->
+    <section class="gallery-page-section">
+      <div class="gallery-container">
+
+        <div class="gallery-filters" id="gallery-filters">
+          <button class="filter-btn active" data-filter="all">Toutes les photos</button>
+          <button class="filter-btn" data-filter="mariage">Mariages &amp; Cérémonies</button>
+          <button class="filter-btn" data-filter="portrait">Portraits Studio</button>
+          <button class="filter-btn" data-filter="event">Événements &amp; Corporate</button>
+        </div>
+
+        <!-- GRILLE COMPLÈTE ÉDITORIALE -->
+        <div class="gallery-full-grid" id="gallery-full-grid">
+
+          <button type="button" class="gallery-card g-tall" data-category="mariage"
+            data-img="images/hero-background-2.jpg" data-title="Étreinte &amp; Élégance">
+            <div class="gallery-card-img" style="background-image: url('images/hero-background-2.jpg');"></div>
+            <div class="gallery-card-overlay">
+            </div>
+          </button>
+
+          <button type="button" class="gallery-card g-wide" data-category="portrait"
+            data-img="images/hero-background-1.jpg" data-title="Coiffe &amp; Robe Cérémonielle">
+            <div class="gallery-card-img" style="background-image: url('images/hero-background-1.jpg');"></div>
+            <div class="gallery-card-overlay">
+            </div>
+          </button>
+
+          <button type="button" class="gallery-card" data-category="portrait" data-img="images/hero-background-3.jpg"
+            data-title="Le Premier Anniversaire Royal">
+            <div class="gallery-card-img" style="background-image: url('images/hero-background-3.jpg');"></div>
+            <div class="gallery-card-overlay">
+            </div>
+          </button>
+
+          <button type="button" class="gallery-card" data-category="portrait" data-img="images/hero-background-4.jpg"
+            data-title="Éclat &amp; Spontanéité">
+            <div class="gallery-card-img" style="background-image: url('images/hero-background-4.jpg');"></div>
+            <div class="gallery-card-overlay">
+            </div>
+          </button>
+
+          <button type="button" class="gallery-card g-wide" data-category="event"
+            data-img="images/service-couverture.jpg" data-title="Sommet &amp; Conférence Internationale">
+            <div class="gallery-card-img" style="background-image: url('images/service-couverture.jpg');"></div>
+            <div class="gallery-card-overlay">
+            </div>
+          </button>
+
+          <button type="button" class="gallery-card g-tall" data-category="mariage" data-img="images/galerie-1.jpg"
+            data-title="Promesse &amp; Intimité">
+            <div class="gallery-card-img" style="background-image: url('images/galerie-1.jpg');"></div>
+            <div class="gallery-card-overlay">
+            </div>
+          </button>
+
+          <button type="button" class="gallery-card" data-category="event" data-img="images/galerie-2.jpg"
+            data-title="Lumières de Soirée">
+            <div class="gallery-card-img" style="background-image: url('images/galerie-2.jpg');"></div>
+            <div class="gallery-card-overlay">
+            </div>
+          </button>
+
+          <button type="button" class="gallery-card g-wide" data-category="mariage" data-img="images/galerie-3.jpg"
+            data-title="Instants Partagés">
+            <div class="gallery-card-img" style="background-image: url('images/galerie-3.jpg');"></div>
+            <div class="gallery-card-overlay">
+            </div>
+          </button>
+
+          <button type="button" class="gallery-card" data-category="event" data-img="images/service-video.jpg"
+            data-title="Captation Cinéma">
+            <div class="gallery-card-img" style="background-image: url('images/service-video.jpg');"></div>
+            <div class="gallery-card-overlay">
+            </div>
+          </button>
+
+          <button type="button" class="gallery-card g-tall" data-category="portrait" data-img="images/galerie-5.jpg"
+            data-title="L'Art du Portrait">
+            <div class="gallery-card-img" style="background-image: url('images/galerie-5.jpg');"></div>
+            <div class="gallery-card-overlay">
+            </div>
+          </button>
+
+          <button type="button" class="gallery-card g-wide" data-category="mariage" data-img="images/galerie-6.jpg"
+            data-title="L'Émotion Pure">
+            <div class="gallery-card-img" style="background-image: url('images/galerie-6.jpg');"></div>
+            <div class="gallery-card-overlay">
+            </div>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNIÈRE CTA CONTACT -->
+    <section class="page-cta-banner">
+      <div class="page-cta-inner">
+        <h2>Un événement à immortaliser&nbsp;?</h2>
+        <p>Réservez dès maintenant votre date et confiez-nous vos plus beaux souvenirs.</p>
+        <a href="contact.html" class="btn btn-primary btn-pill-cta">
+          <span>Réserver une séance / Devis</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo">Photo Kolygade</span>
+        <p>Prestations professionnelles de reportage photo, production vidéo et couverture médiatique à Lomé, Togo.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="prestations.html">Prestations</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact direct</h4>
+        <p>Lomé, Togo</p>
+        <p><a href="tel:+22891980485">+228 91 98 04 85</a></p>
+        <p><a href="mailto:contact@photokolygade.tg">contact@photokolygade.tg</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Photo Kolygade — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- BOUTON FLOTTANT DE CONTACT -->
+  <a href="contact.html" class="floating-contact-btn" id="floating-contact" aria-label="Contactez-nous directement">
+    <span class="floating-icon" aria-hidden="true">💬</span>
+    <span>Contactez-nous</span>
+  </a>
+
+  <!-- LIGHTBOX — agrandissement des photos au clic -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo en grand format">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Fermer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" aria-hidden="true">
+        <line x1="4" y1="4" x2="20" y2="20"></line>
+        <line x1="20" y1="4" x2="4" y2="20"></line>
+      </svg>
+    </button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Photo précédente">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <div class="lightbox-img" id="lightbox-img"></div>
+    <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Photo suivante">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

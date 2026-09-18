@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHOTO KOLYGADE — Reportage, vidéo & couverture médiatique à Lomé</title>
+  <meta name="description"
+    content="PHOTO KOLYGADE — Prestations de reportage, vidéo et couverture médiatique à Lomé, Togo. Vente d'appareils photos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+     COMMENT AJOUTER VOS PHOTOS
+     Chaque photo est posée en fond d'un <div> via style="background-image: url('...');".
+     Pour la remplacer, changez simplement le chemin dans l'attribut style de ce bloc.
+     Pour le hero (plus bas), pensez aussi à ajuster --pos si un visage se retrouve
+     trop près du bord sur certains écrans.
+     ============================================================ -->
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#accueil" class="logo">Photo Kolygade</a>
+      <nav class="main-nav" id="main-nav">
+        <a href="prestations.html">Prestations</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO — SLIDER 4 PHOTOS AVEC DÉFILEMENT AUTOMATIQUE & BOUTONS DE NAVIGATION -->
+    <section class="hero" id="accueil">
+      <!-- 
+        ============================================================
+        PHOTOS DU HERO SLIDER (4 PHOTOS) :
+        Pour changer les photos, remplacez les URLs dans les attributs style ci-dessous
+        ou mettez vos fichiers dans images/hero-slide-1.jpg, hero-slide-2.jpg, etc.
+        ============================================================
+      -->
+      <!--
+        Chaque slide affiche sa photo en plein cadre (cover), sans déformation.
+        Si un visage ou un détail important se retrouve coupé sur certains écrans,
+        ajustez --pos (position horizontale verticale, ex: "50% 15%" pour remonter le cadrage).
+      -->
+      <div class="hero-slider" id="hero-slider">
+        <div class="hero-slide active" data-slide="1"
+          style="--bg-url: url('images/hero-background-1.jpg'); --pos: 50% 25%;"></div>
+        <div class="hero-slide" data-slide="2" style="--bg-url: url('images/hero-background-1.jpg'); --pos: 50% 30%;">
+        </div>
+        <div class="hero-slide" data-slide="3" style="--bg-url: url('images/hero-background-2.jpg'); --pos: 50% 20%;">
+        </div>
+        <div class="hero-slide" data-slide="4" style="--bg-url: url('images/hero-background-3.jpg'); --pos: 50% 30%;">
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">Photo<br>Kolygade</h1>
+        <p class="hero-sub">Reportage, vidéo &amp; couverture médiatique</p>
+        <div class="hero-actions">
+          <a href="#prestations" class="btn btn-primary">Découvrir nos prestations</a>
+        </div>
+      </div>
+
+      <!-- Boutons de navigation latéraux (Style épuré chevrons comme sur le modèle) -->
+      <button class="hero-nav-arrow hero-nav-prev" id="hero-prev" aria-label="Photo précédente">
+        <svg viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polyline points="20 4, 4 24, 20 44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="hero-nav-arrow hero-nav-next" id="hero-next" aria-label="Photo suivante">
+        <svg viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polyline points="4 4, 20 24, 4 44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro">
+      <p>
+        Photo Kolygade saisit les moments qui comptent&nbsp;: cérémonies,
+        événements, projets d'entreprise et portraits, racontés en images avec précision
+        et sensibilité. De la prise de vue à la vidéo, chaque prestation est pensée pour
+        durer.
+      </p>
+    </section>
+
+    <!-- PRESTATIONS (PHOTO, VIDÉO & COUVERTURE MÉDIATIQUE) -->
+    <section class="services" id="prestations">
+      <h2 class="section-title">Nos prestations</h2>
+      <div class="services-grid">
+
+        <a href="prestations.html#photo" class="service-tile">
+          <div class="service-photo-wrap">
+            <div class="service-photo" style="background-image: url('images/service-reportage.jpg');"></div>
+            <div class="service-tile-overlay">
+              <h3>Reportage Photo</h3>
+            </div>
+          </div>
+          <p class="service-tile-desc">Mariages, baptêmes et cérémonies familiales, captés avec discrétion.</p>
+          <span class="service-tile-link">En savoir plus →</span>
+        </a>
+
+        <a href="prestations.html#video" class="service-tile">
+          <div class="service-photo-wrap">
+            <div class="service-photo" style="background-image: url('images/service-video.jpg');"></div>
+            <div class="service-tile-overlay">
+              <h3>Production Vidéo</h3>
+            </div>
+          </div>
+          <p class="service-tile-desc">Films d'événements et clips promotionnels au rendu cinématographique.</p>
+          <span class="service-tile-link">En savoir plus →</span>
+        </a>
+
+        <a href="prestations.html#couverture" class="service-tile">
+          <div class="service-photo-wrap">
+            <div class="service-photo" style="background-image: url('images/service-couverture.jpg');"></div>
+            <div class="service-tile-overlay">
+              <h3>Couverture Médiatique</h3>
+            </div>
+          </div>
+          <p class="service-tile-desc">Conférences, sommets et lancements, avec livraison le jour même.</p>
+          <span class="service-tile-link">En savoir plus →</span>
+        </a>
+
+      </div>
+
+      <div class="section-cta-wrap">
+        <a href="prestations.html" class="btn-section-cta">
+          <span>Découvrir toutes nos prestations</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- GALERIE — BANDEAU DE PHOTOS EN DÉFILEMENT AUTOMATIQUE -->
+    <section class="gallery-strip-section" id="galerie">
+      <h2 class="section-title">Galerie</h2>
+
+      <div class="gallery-marquee-viewport">
+        <div class="gallery-marquee-track">
+          <div class="marquee-block">
+            <div class="marquee-photo" style="background-image: url('images/galerie-1.jpg');"></div>
+          </div>
+          <div class="marquee-block">
+            <div class="marquee-photo" style="background-image: url('images/galerie-2.jpg');"></div>
+          </div>
+          <div class="marquee-block">
+            <div class="marquee-photo" style="background-image: url('images/galerie-3.jpg');"></div>
+          </div>
+          <div class="marquee-block">
+            <div class="marquee-photo" style="background-image: url('images/service-couverture.jpg');"></div>
+          </div>
+          <div class="marquee-block">
+            <div class="marquee-photo" style="background-image: url('images/galerie-5.jpg');"></div>
+          </div>
+          <div class="marquee-block">
+            <div class="marquee-photo" style="background-image: url('images/galerie-6.jpg');"></div>
+          </div>
+          <!-- Le bloc ci-dessus est dupliqué à l'identique pour boucler sans coupure -->
+          <div class="marquee-block" aria-hidden="true">
+            <div class="marquee-photo" style="background-image: url('images/galerie-1.jpg');"></div>
+          </div>
+          <div class="marquee-block" aria-hidden="true">
+            <div class="marquee-photo" style="background-image: url('images/galerie-2.jpg');"></div>
+          </div>
+          <div class="marquee-block" aria-hidden="true">
+            <div class="marquee-photo" style="background-image: url('images/galerie-3.jpg');"></div>
+          </div>
+          <div class="marquee-block" aria-hidden="true">
+            <div class="marquee-photo" style="background-image: url('images/service-couverture.jpg');"></div>
+          </div>
+          <div class="marquee-block" aria-hidden="true">
+            <div class="marquee-photo" style="background-image: url('images/galerie-5.jpg');"></div>
+          </div>
+          <div class="marquee-block" aria-hidden="true">
+            <div class="marquee-photo" style="background-image: url('images/galerie-6.jpg');"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-cta-wrap">
+        <a href="galerie.html" class="btn-section-cta">
+          <span>Explorer toute la galerie</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- NOTRE PHILOSOPHIE — même composant photo+texte que la page prestations -->
+    <section class="philosophy-section">
+      <div class="detail-container">
+        <article class="detail-item">
+          <div class="detail-visual">
+            <div class="detail-img" style="background-image: url('images/galerie-5.jpg');"></div>
+          </div>
+          <div class="detail-text">
+            <span class="detail-badge">Notre approche</span>
+            <blockquote class="philosophy-quote">
+              <p>« Ce que la photographie reproduit à l'infini n'a lieu qu'une fois. »</p>
+              <cite>— Roland Barthes</cite>
+            </blockquote>
+            <p class="philosophy-lead">C'est cette idée qui guide chaque prise de vue&nbsp;: être présents au bon
+              moment, pour que rien d'important ne vous échappe.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TÉMOIGNAGES (SANS AUCUN BOUTON) -->
+    <section class="testimonials" id="temoignages">
+      <div class="testimonials-inner">
+        <h2 class="section-title text-light">Ils nous ont fait confiance</h2>
+        <div class="testimonials-grid">
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 étoiles">★★★★★</div>
+            <p class="testimonial-text">« Une équipe discrète et remarquablement efficace lors de notre mariage. Les
+              clichés ont su capturer toute l'émotion sans jamais déranger le cours de la fête. »</p>
+            <div class="testimonial-author">
+              <strong>Koffi &amp; Akossiwa</strong>
+              <span>Mariage à Lomé</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 étoiles">★★★★★</div>
+            <p class="testimonial-text">« Couverture vidéo et photos irréprochable pour notre séminaire d'entreprise.
+              Restitution ultra rapide des visuels pour nos réseaux et relations presse. »</p>
+            <div class="testimonial-author">
+              <strong>Afrik Initiatives</strong>
+              <span>Couverture institutionnelle</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 étoiles">★★★★★</div>
+            <p class="testimonial-text">« Une séance photo professionnelle de grande qualité. L'équipe sait
+              immédiatement mettre à l'aise et le résultat final est au-delà de mes attentes. »</p>
+            <div class="testimonial-author">
+              <strong>David E.</strong>
+              <span>Séance portrait</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNIÈRE CTA — renvoie vers la page Contact dédiée -->
+    <section class="page-cta-banner" id="contact">
+      <div class="page-cta-inner">
+        <h2>Un événement à immortaliser&nbsp;?</h2>
+        <p>Racontez-nous votre projet, on vous répond rapidement avec un devis clair.</p>
+        <a href="contact.html" class="btn btn-primary btn-pill-cta">
+          <span>Réserver une séance / Devis</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo">Photo Kolygade</span>
+        <p>Reportage photo, vidéo &amp; couverture médiatique à Lomé, Togo.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="prestations.html">Prestations</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact direct</h4>
+        <p>Lomé, Togo</p>
+        <p><a href="tel:+22891980485">+228 91 98 04 85</a></p>
+        <p><a href="mailto:contact@photokolygade.tg">contact@photokolygade.tg</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Photo Kolygade — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- BOUTON FLOTTANT CONTACTEZ-NOUS -->
+  <a href="contact.html" class="floating-contact-btn" aria-label="Contactez-nous">
+    <span class="floating-icon">💬</span>
+    <span>Contactez-nous</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
