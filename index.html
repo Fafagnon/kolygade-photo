@@ -41,62 +41,34 @@
 
   <main>
 
-    <!-- HERO — SLIDER 4 PHOTOS AVEC DÉFILEMENT AUTOMATIQUE & BOUTONS DE NAVIGATION -->
+    <!-- HERO — SLIDER PHOTO DANS UN CADRE -->
     <section class="hero" id="accueil">
-      <!-- 
-        ============================================================
-        PHOTOS DU HERO SLIDER (4 PHOTOS) :
-        Pour changer les photos, remplacez les URLs dans les attributs style ci-dessous
-        ou mettez vos fichiers dans images/hero-slide-1.jpg, hero-slide-2.jpg, etc.
-        ============================================================
-      -->
-      <!--
-        Chaque slide affiche sa photo en plein cadre (cover), sans déformation.
-        Si un visage ou un détail important se retrouve coupé sur certains écrans,
-        ajustez --pos (position horizontale verticale, ex: "50% 15%" pour remonter le cadrage).
-      -->
-      <div class="hero-slider" id="hero-slider">
-        <div class="hero-slide active" data-slide="1"
-          style="--bg-url: url('images/hero-background-1.jpg'); --pos: 50% 25%;"></div>
-        <div class="hero-slide" data-slide="2" style="--bg-url: url('images/hero-background-1.jpg'); --pos: 50% 30%;">
-        </div>
-        <div class="hero-slide" data-slide="3" style="--bg-url: url('images/hero-background-2.jpg'); --pos: 50% 20%;">
-        </div>
-        <div class="hero-slide" data-slide="4" style="--bg-url: url('images/hero-background-3.jpg'); --pos: 50% 30%;">
-        </div>
-      </div>
-
       <div class="hero-content">
+        <p class="hero-kicker">Studio photo &amp; création visuelle</p>
         <h1 class="hero-title">Photo<br>Kolygade</h1>
-        <p class="hero-sub">Reportage, vidéo &amp; couverture médiatique</p>
+        <p class="hero-sub">Des images qui racontent vos moments avec justesse, élégance et émotion.</p>
         <div class="hero-actions">
           <a href="#prestations" class="btn btn-primary">Découvrir nos prestations</a>
         </div>
       </div>
 
-      <!-- Boutons de navigation latéraux (Style épuré chevrons comme sur le modèle) -->
-      <button class="hero-nav-arrow hero-nav-prev" id="hero-prev" aria-label="Photo précédente">
-        <svg viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <polyline points="20 4, 4 24, 20 44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </button>
-      <button class="hero-nav-arrow hero-nav-next" id="hero-next" aria-label="Photo suivante">
-        <svg viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <polyline points="4 4, 20 24, 4 44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </button>
-    </section>
-
-    <!-- INTRO -->
-    <section class="intro">
-      <p>
-        Photo Kolygade saisit les moments qui comptent&nbsp;: cérémonies,
-        événements, projets d'entreprise et portraits, racontés en images avec précision
-        et sensibilité. De la prise de vue à la vidéo, chaque prestation est pensée pour
-        durer.
-      </p>
+      <div class="hero-frame" aria-label="Sélection de photographies">
+        <div class="hero-slider" id="hero-slider">
+          <div class="hero-slide active" data-slide="1"
+            style="--bg-url: url('images/hero-background-1.jpg'); --pos: 50% 25%;"></div>
+          <div class="hero-slide" data-slide="2" style="--bg-url: url('images/hero-background-2.jpg'); --pos: 50% 25%;">
+          </div>
+          <div class="hero-slide" data-slide="3" style="--bg-url: url('images/hero-background-3.jpg'); --pos: 50% 30%;">
+          </div>
+          <div class="hero-slide" data-slide="4" style="--bg-url: url('images/hero-background-4.jpg'); --pos: 50% 25%;">
+          </div>
+        </div>
+        <div class="hero-frame-controls">
+          <button class="hero-nav-arrow hero-nav-prev" id="hero-prev" aria-label="Photo précédente">←</button>
+          <div class="hero-progress" aria-hidden="true"><span></span></div>
+          <button class="hero-nav-arrow hero-nav-next" id="hero-next" aria-label="Photo suivante">→</button>
+        </div>
+      </div>
     </section>
 
     <!-- PRESTATIONS (PHOTO, VIDÉO & COUVERTURE MÉDIATIQUE) -->
@@ -209,21 +181,19 @@
       </div>
     </section>
 
-    <!-- NOTRE PHILOSOPHIE — même composant photo+texte que la page prestations -->
-    <section class="philosophy-section">
+    <!-- À PROPOS — même composant photo+texte que la page prestations -->
+    <section class="about-section">
       <div class="detail-container">
         <article class="detail-item">
           <div class="detail-visual">
             <div class="detail-img" style="background-image: url('images/galerie-5.jpg');"></div>
           </div>
           <div class="detail-text">
-            <span class="detail-badge">Notre approche</span>
-            <blockquote class="philosophy-quote">
-              <p>« Ce que la photographie reproduit à l'infini n'a lieu qu'une fois. »</p>
-              <cite>— Roland Barthes</cite>
-            </blockquote>
-            <p class="philosophy-lead">C'est cette idée qui guide chaque prise de vue&nbsp;: être présents au bon
-              moment, pour que rien d'important ne vous échappe.</p>
+            <span class="detail-badge">À propos</span>
+            <p class="about-lead">Photo Kolygade saisit les moments qui comptent&nbsp;: cérémonies,
+              événements, projets d'entreprise et portraits, racontés en images avec précision
+              et sensibilité. De la prise de vue à la vidéo, chaque prestation est pensée pour
+              durer.</p>
           </div>
         </article>
       </div>
@@ -282,6 +252,14 @@
             <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
         </a>
+      </div>
+    </section>
+
+    <!-- CTA CONTACT COMPACT -->
+    <section class="contact-prompt" aria-labelledby="contact-prompt-title">
+      <div class="contact-prompt-inner">
+        <h2 id="contact-prompt-title">Une question&nbsp;? Contactez-nous</h2>
+        <a href="contact.html" class="btn btn-primary">Nous contacter</a>
       </div>
     </section>
 

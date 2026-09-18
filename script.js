@@ -27,6 +27,9 @@ const slides = document.querySelectorAll('.hero-slide');
 const dots = document.querySelectorAll('.hero-dot');
 const prevBtn = document.getElementById('hero-prev');
 const nextBtn = document.getElementById('hero-next');
+const slideLabel = document.getElementById('hero-slide-label');
+const slideCurrent = document.getElementById('hero-slide-current');
+const progressBar = document.querySelector('.hero-progress span');
 
 let currentSlide = 0;
 let slideInterval = null;
@@ -41,6 +44,9 @@ function goToSlide(index) {
 
   slides[currentSlide].classList.add('active');
   if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+  if (slideLabel) slideLabel.textContent = slides[currentSlide].dataset.label || '';
+  if (slideCurrent) slideCurrent.textContent = String(currentSlide + 1).padStart(2, '0');
+  if (progressBar) progressBar.style.width = `${((currentSlide + 1) / slides.length) * 100}%`;
 }
 
 function nextSlide() {
@@ -87,11 +93,11 @@ if (slides.length > 1) {
     });
   });
 
-  // Pause au survol des contrôles pour confort utilisateur
-  const heroControls = document.querySelector('.hero-controls');
-  if (heroControls) {
-    heroControls.addEventListener('mouseenter', stopSliderTimer);
-    heroControls.addEventListener('mouseleave', startSliderTimer);
+  // Pause au survol du cadre photo pour confort de contemplation (UX)
+  const heroFrame = document.querySelector('.hero-frame') || document.querySelector('.hero-controls');
+  if (heroFrame) {
+    heroFrame.addEventListener('mouseenter', stopSliderTimer);
+    heroFrame.addEventListener('mouseleave', startSliderTimer);
   }
 }
 
