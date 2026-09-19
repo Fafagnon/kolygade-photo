@@ -29,6 +29,7 @@
     <div class="header-inner">
       <a href="#accueil" class="logo">Photo Kolygade</a>
       <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="active">Accueil</a>
         <a href="prestations.html">Prestations</a>
         <a href="galerie.html">Galerie</a>
         <a href="contact.html">Contact</a>
@@ -41,14 +42,15 @@
 
   <main>
 
-    <!-- HERO — SLIDER PHOTO DANS UN CADRE -->
+    <!-- HERO — COMPOSITION ÉDITORIALE INSPIRÉE DU MODÈLE -->
     <section class="hero" id="accueil">
       <div class="hero-content">
-        <p class="hero-kicker">Studio photo &amp; création visuelle</p>
-        <h1 class="hero-title">Photo<br>Kolygade</h1>
+        <h1 class="hero-title">Photo Kolygade</h1>
+        <p class="hero-tagline">Studio photo &amp; création visuelle</p>
         <p class="hero-sub">Des images qui racontent vos moments avec justesse, élégance et émotion.</p>
         <div class="hero-actions">
-          <a href="#prestations" class="btn btn-primary">Découvrir nos prestations</a>
+          <a href="#prestations" class="btn btn-primary">Nos prestations</a>
+          <a href="contact.html" class="btn btn-secondary">Nous contacter</a>
         </div>
       </div>
 
@@ -64,9 +66,13 @@
           </div>
         </div>
         <div class="hero-frame-controls">
-          <button class="hero-nav-arrow hero-nav-prev" id="hero-prev" aria-label="Photo précédente">←</button>
-          <div class="hero-progress" aria-hidden="true"><span></span></div>
-          <button class="hero-nav-arrow hero-nav-next" id="hero-next" aria-label="Photo suivante">→</button>
+          <div class="hero-dots-capsule" role="tablist" aria-label="Sélecteur de photo">
+            <button class="hero-dot active" data-index="0" aria-label="Photo 1" role="tab"
+              aria-selected="true"></button>
+            <button class="hero-dot" data-index="1" aria-label="Photo 2" role="tab" aria-selected="false"></button>
+            <button class="hero-dot" data-index="2" aria-label="Photo 3" role="tab" aria-selected="false"></button>
+            <button class="hero-dot" data-index="3" aria-label="Photo 4" role="tab" aria-selected="false"></button>
+          </div>
         </div>
       </div>
     </section>
@@ -254,15 +260,6 @@
         </a>
       </div>
     </section>
-
-    <!-- CTA CONTACT COMPACT -->
-    <section class="contact-prompt" aria-labelledby="contact-prompt-title">
-      <div class="contact-prompt-inner">
-        <h2 id="contact-prompt-title">Une question&nbsp;? Contactez-nous</h2>
-        <a href="contact.html" class="btn btn-primary">Nous contacter</a>
-      </div>
-    </section>
-
   </main>
 
   <footer class="site-footer">
